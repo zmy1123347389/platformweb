@@ -7,10 +7,10 @@ logging:
 spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
-    driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/behereplatformweb?useUnicode=true&characterEncoding=utf8
-    username: root
-    password: root
+    driverClassName: oracle.jdbc.OracleDriver
+    url: jdbc:oracle:thin:@127.0.0.1:1521/xe
+    username: PLATFORMWEB
+    password: 123456
     initialSize: 1
     minIdle: 3
     maxActive: 20
